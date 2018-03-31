@@ -56,7 +56,7 @@ namespace Stock.Stock
 
 
 
-            //result_output();
+            result_output();
         }
 
         public void looper()
@@ -378,6 +378,7 @@ namespace Stock.Stock
             lost *= cutOffPoint;
 
             Debug.consol("Total win = "+ win + ", lost = "+ lost + ".  " + (100.0*(win/(win+lost))) + "%  draw = "+ draw + "\n");
+            return;
             Debug.consol("Outputing result ...");
 
             //System.IO.File.WriteAllText(@"C:\Users\darkchan\Desktop\stockresult.csv", string.Empty);
